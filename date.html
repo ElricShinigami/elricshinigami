@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Quick question</title>
+    <script type="text/javascript">
+        flag = 1
+
+        function f1() {
+            var Name = prompt("If you agree to go on a date with me, please enter your name");
+
+            if (Name == "" || Name == null) {
+                alert("please enter your name.");
+            } else {
+                alert("yiieeee love ko ni " + Name + " hehe love you mwuah mwuah ka sakin.");
+            }
+        }
+
+        function f() {
+            if (flag == 1) {
+                Bn.style.top = 400
+                Bn.style.left = 300
+                flag = 2
+            } else if (flag == 2) {
+                Bn.style.top = 400
+                Bn.style.left = 50
+                flag = 3
+            } else if (flag == 3) {
+                Bn.style.top = 370
+                Bn.style.left = 166
+                flag = 1
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Hi beautiful! </h1>
+    <img src=https://media.tenor.com/MYjwASLIcHEAAAAC/heart-cute.gif height="220">
+    <h1 style="#">Can we go on date?</h1>
+    <div id="By" style="position:absolute; left:64px; top:370px; width:210px;
+height:210px;">
+        <input type="button" value=" YES " onclick="f1()">
+    </div>
+    <div id="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+        <input type="button" value=" NO " onmouseover="f()">
+    </div>
+</body>
+
+</html>
+ 
